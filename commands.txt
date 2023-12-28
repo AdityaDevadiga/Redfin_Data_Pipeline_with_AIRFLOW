@@ -1,0 +1,46 @@
+# commands.txt
+
+## 1. `python3 --version`
+   - **Purpose**: Displays the version of Python 3 installed on the system.
+
+## 2. `sudo apt update`
+   - **Purpose**: Updates the package list on a Debian-based Linux system, ensuring the package manager has information about the latest versions of available packages.
+
+## 3. `sudo apt install python3-pip`
+   - **Purpose**: Installs the Python 3 package manager (pip), which is used for installing Python packages.
+
+## 4. `sudo apt install python3.10-venv`
+   - **Purpose**: Installs the Python 3.10 virtual environment package. Virtual environments are used to isolate Python project dependencies.
+
+## 5. `python3 -m venv redfin_venv`
+   - **Purpose**: Creates a Python virtual environment named "redfin_venv" using the venv module. This virtual environment is where project-specific Python packages can be installed and managed.
+
+## 6. `source redfin_venv/bin/activate`
+   - **Purpose**: Activates the virtual environment, allowing you to work within the isolated Python environment.
+
+## 7. `pip install boto3`
+   - **Purpose**: Installs the Boto3 library, the official Python SDK for AWS (Amazon Web Services). Boto3 is used for programmatically interacting with AWS services.
+
+## 8. `pip install --upgrade awscli`
+   - **Purpose**: Installs or upgrades the AWS Command Line Interface (AWS CLI), a tool for interacting with AWS services from the command line.
+
+## 9. `aws configure`
+   - **Purpose**: Configures the AWS CLI with AWS access key, secret key, region, and output format. This information is used to authenticate and authorize AWS CLI commands.
+
+## 10. `pip install apache-airflow`
+    - **Purpose**: Installs Apache Airflow, an open-source platform for orchestrating complex workflows and data pipelines.
+
+## 11. `pip install apache-airflow-providers-amazon`
+    - **Purpose**: Installs the Apache Airflow provider for Amazon, including operators and hooks for interacting with AWS services in Airflow workflows.
+
+## 12. `airflow version`
+    - **Purpose**: Displays the version of Apache Airflow installed.
+
+## 13. `airflow standalone`
+    - **Purpose**: (Note: This command doesn't exist in the standard Apache Airflow command set. Verify the command or refer to your documentation for its purpose.)
+
+## 14. `aws iam list-roles | grep 'EMR_DefaultRole\|EMR_EC2_DefaultRole'`
+    - **Purpose**: Lists IAM roles in the AWS account and filters the output to display roles with names containing "EMR_DefaultRole" or "EMR_EC2_DefaultRole." These roles are commonly used for Amazon EMR (Elastic MapReduce).
+
+## 15. `aws emr create-default-roles`
+    - **Purpose**: Creates default IAM roles required for Amazon EMR if they do not already exist. Roles like EMR_DefaultRole and EMR_EC2_DefaultRole are commonly used for EMR clusters.
