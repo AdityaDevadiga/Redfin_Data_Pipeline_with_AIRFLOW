@@ -1,4 +1,4 @@
-# Redfin Data Analytics Pipeline
+# Automate the Redfin Data Analytics Pipeline
 
 This repository contains scripts and configurations for setting up a data analytics pipeline using Apache Airflow, AWS EMR, and Spark for analyzing Redfin data. The following steps assume you are working inside an AWS EC2 instance.
 
